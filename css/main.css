@@ -8,6 +8,8 @@ nav{
     display:inline;
     float:right;
 	width: 58%;
+	margin-top: 50px;
+	margin-bottom: -15px;
 }
 
 nav ul, footer ul {
@@ -53,11 +55,16 @@ h2 {
     font-size: 1.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-div.siteheader {
+div.businesscard {
 	width: 38%;
+	float: left;
 }
-div.siteheader h2 {
-	display: inline;
+div.siteheader {
+	background-color: #8833DD;
+	color: whitesmoke;
+}
+div.siteheader a {
+	color: #BAF;
 }
 h3 {
     font-size: 1.2em;
@@ -69,6 +76,8 @@ p {
     color: #333;
     text-align: justify;
     text-justify: inter-word;
+	margin-top: 0em;
+	margin-bottom: 1em;
 }
 
 footer {
