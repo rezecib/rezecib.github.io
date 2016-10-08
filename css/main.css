@@ -7,6 +7,7 @@ body {
 nav{
     display:inline;
     float:right;
+	width: 58%;
 }
 
 nav ul, footer ul {
@@ -51,6 +52,12 @@ h1 {
 h2 {
     font-size: 1.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+div.siteheader {
+	width: 38%;
+}
+div.siteheader h2 {
+	display: inline;
 }
 h3 {
     font-size: 1.2em;
