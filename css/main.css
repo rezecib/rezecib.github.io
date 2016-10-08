@@ -1,7 +1,5 @@
 body {
-    margin: 60px auto;
-    width: 70%;
-
+    margin: 0px;
 }
 
 nav{
@@ -60,8 +58,17 @@ div.businesscard {
 	float: left;
 }
 div.siteheader {
+	height: 1%;
+	overflow: hidden;
+	padding-top: 60px;
+	padding-bottom: 10px;
 	background-color: #8833DD;
 	color: whitesmoke;
+}
+div.container {
+	overflow: hidden;
+	max-width: 1200px;
+	margin: 0px auto;
 }
 div.siteheader a {
 	color: #BAF;
