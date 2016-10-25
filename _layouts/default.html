@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- TODO: Stylesheet -->
 <link rel="stylesheet" type="text/css" href="/css/main.css">
+<script type="text/javascript">
+	window.onload = function() {
+		//prevent transitions from playing on load, but reenable them afterwards
+		var body = document.getElementsByTagName("body")[0];
+		body.className = body.className.replace("preload", "");
+		
+		//highlight the nav bar item corresponding to the current page
+		var nav_sections = ["about", "research", "projects"];
+		var nav_id = "nav-home"
+		var nav_sections = document.getElementsByTagName("nav")[0].children[0].children
+		for(var i = nav_sections.length - 1; i >= 0; i--) {
+			if(window.location.pathname.match("^" + nav_sections[i].children[0].pathname)) {
+				nav_sections[i].className = "selected";
+				return;
+			}
+		}
+	};
+</script>
 </head>
-<body>
+<body class="preload">
 <div class="siteheader">
 	<div class="container">
 		<div class="businesscard">

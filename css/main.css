@@ -1,3 +1,12 @@
+.preload * {
+  transition: none !important;
+}
+
+* {
+	transition: 0.5s;
+  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
 body {
     margin: 0px;
 }
@@ -15,10 +24,18 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
+	margin: 0px;
 }
 nav ul li, footer ul li{
-    display: inline;
-    margin-right: 20px;
+    display: block;
+	float: left;
+}
+nav ul li:hover, footer ul li:hover, nav ul li.selected, footer ul li.selected {
+	background-color: rgba(255,255,255,.2);
+}
+nav ul li a {
+	padding: 14px 20px;
+	display: block;
 }
 
 header.info ul li{
@@ -41,14 +58,16 @@ header.info ul {
 
 a {
     text-decoration: none;
-    color: #999;
+    color: #A4A;
 }
 a:hover {
     text-decoration: underline;
+	color: #8833DD;
 }
 a.link {
     color:#000000;
 }
+
 h1 {
     font-size: 1.8em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -57,10 +76,12 @@ h2 {
     font-size: 1.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
 div.businesscard {
 	width: 38%;
 	float: left;
 }
+
 div.siteheader {
 	height: 1%;
 	overflow: hidden;
@@ -69,15 +90,21 @@ div.siteheader {
 	background-color: #8833DD;
 	color: whitesmoke;
 }
+
 div.container {
-	overflow: hidden;
+/*	overflow: hidden; */
 	max-width: 1200px;
 	margin: 0px auto;
 	padding: 0px 20px;
 }
+
 div.siteheader a {
 	color: #BAF;
 }
+div.siteheader a:hover {
+	color: whitesmoke;
+}
+
 h3 {
     font-size: 1.2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -106,6 +133,5 @@ ul.posts li {
     list-style: none;
 }
 
-img[alt=Shamya] { width: 30%; float: left }
 .section1 { width: 48%; float:left;  position: relative;}
 .section2 { width: 48%; float:right;  position: relative;}

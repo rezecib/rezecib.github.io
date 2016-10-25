@@ -1,0 +1,9 @@
+start_test_server.bat
+_site
+Gemfile
+Gemfile.lock
+vendor
+_config.yml
+ideas.txt
+.bundle
+bin
