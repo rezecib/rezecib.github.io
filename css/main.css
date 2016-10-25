@@ -135,3 +135,42 @@ ul.posts li {
 
 .section1 { width: 48%; float:left;  position: relative;}
 .section2 { width: 48%; float:right;  position: relative;}
+
+div.spacer {
+	padding: .4%;
+}
+
+div.project-category {
+	background-color: #DDAAFF;
+	padding: .8%;
+	/*padding and margin count twice, for each side, and are not included in width (50% - 0.8%*4 = 46.8%)*/
+	min-width: 46.8%;
+	max-width: 561px;
+	margin: .8%;
+	float: left;
+}
+div.project-category:hover {
+	background-color: #F0CCFF;
+}
+div.project-category h3 {
+	margin-top: 0px;
+	color: #8833DD;
+	text-align: center;
+}
+div.project-category ul {
+	margin: 0px;
+	padding: 0px;
+}
+div.project-category ul li {
+	display: block;
+	padding: .8%;
+	margin: .8%;
+	background-color: rgba(255,255,255,0.2);
+}
+div.project-category ul li a {
+	font-weight: bold;
+	margin-left: 10px;
+}
+div.project-category a {
+	
+}
