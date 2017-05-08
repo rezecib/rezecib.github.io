@@ -1,10 +1,10 @@
 .preload * {
-  transition: none !important;
+	transition: none !important;
 }
 
 * {
 	transition: 0.5s;
-  font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -20,7 +20,6 @@ nav{
 }
 
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -39,7 +38,6 @@ nav ul li a {
 }
 
 header.info ul li{
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     list-style: none;
     display: inline;
 }
@@ -50,7 +48,6 @@ header.info ul li:last-child:after {
 	content: "";
 }
 header.info ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     list-style: none;
     display: inline;
     padding: 0px;
@@ -70,11 +67,9 @@ a.link {
 
 h1 {
     font-size: 1.8em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 h2 {
     font-size: 1.5em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 div.businesscard {
@@ -92,7 +87,6 @@ div.siteheader {
 }
 
 div.container {
-/*	overflow: hidden; */
 	max-width: 1200px;
 	margin: 0px auto;
 	padding: 0px 20px;
@@ -107,7 +101,6 @@ div.siteheader a:hover {
 
 h3 {
     font-size: 1.2em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.1em;
@@ -120,7 +113,6 @@ p {
 }
 
 footer {
-    /*border-top: 1px solid #d5d5d5;*/
     font-size: .8em;
 }
 
@@ -139,23 +131,25 @@ ul.posts li {
 div.spacer {
 	padding: .4%;
 }
-
 div.project-category {
 	background-color: #DDAAFF;
+	box-sizing: border-box;
 	padding: .8%;
-	/*padding and margin count twice, for each side, and are not included in width (50% - 0.8%*4 = 46.8%)*/
-	min-width: 46.8%;
-	max-width: 561px;
+	min-width: 48.4%;
 	margin: .8%;
+	max-width: 561px;
 	float: left;
 }
-div.project-category:hover {
-	background-color: #F0CCFF;
+div.project-category:nth-child(odd) {
+	float: right;
 }
 div.project-category h3 {
 	margin-top: 0px;
 	color: #8833DD;
 	text-align: center;
+}
+div.project-category p {
+	font-size: 1em;
 }
 div.project-category ul {
 	margin: 0px;
@@ -167,9 +161,17 @@ div.project-category ul li {
 	margin: .8%;
 	background-color: rgba(255,255,255,0.2);
 }
+div.project-category ul li:hover {
+	background-color: rgba(255,255,255,0.4);
+}
 div.project-category ul li a {
 	font-weight: bold;
 	margin-left: 10px;
+	font-size: 1.2em;
+}
+div.project-category ul li p, div.project-category ul li p a {
+	margin-left: 0px;
+	font-size: 1em;
 }
 div.project-category a {
 	
